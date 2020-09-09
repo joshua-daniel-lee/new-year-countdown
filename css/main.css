@@ -87,6 +87,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.app {
+  height: 100vh;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  display: inline;
+  position: relative;
+  font: 15vh Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(240, 225, 0, 0.5);
+}
+
+.h1_after_one::after {
+  content: "NEW";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgba(0, 0, 225, 0.5);
+}
+
+.h1_after_two::after {
+  content: "YEAR";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgba(0, 0, 225, 0.5);
+}
+
+.h1_after_three::after {
+  content: "2021";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgba(0, 0, 225, 0.5);
+}
+
+.app_container {
+  display: flex;
+}
+
+.card {
+  min-width: 20vw;
+  background-color: #ffc600;
+  margin: 1vw;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +320,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
