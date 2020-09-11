@@ -5,13 +5,13 @@ const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
 //Date that Ready Player Two launches
-const bookLaunch = "24 Nov 2020";
+const newYear = "1 Jan 2021";
 
 //Countdown function
 function countdown() {
-  const bookLaunchDate = new Date(bookLaunch);
+  const newYearDate = new Date(newYear);
   const currentDate = new Date();
-  const totalSeconds = (bookLaunchDate - currentDate) / 1000;
+  const totalSeconds = (newYearDate - currentDate) / 1000;
   const days = Math.floor(totalSeconds / 3600 / 24);
   const hours = Math.floor(totalSeconds / 3600) % 24;
   const minutes = Math.floor(totalSeconds / 60) % 60;
